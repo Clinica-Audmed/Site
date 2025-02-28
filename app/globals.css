@@ -1,0 +1,431 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+@media screen and (max-width:500px) {
+    .header li a {
+        width:700px ;
+        float: none;
+        display: block;
+        text-align: left;
+    } 
+    .header img{
+        float: right;
+        margin-right: 200px ;
+    }
+    .header-right{
+        float: none;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-menu {
+    margin-top: -10rem;
+    padding: 5px;
+    background: #fff;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    margin-left: 7rem;
+  }
+  .menu-content {
+    margin-top: -20px;
+    margin-bottom: 20px
+
+  }
+  .hamburguer{
+    margin-top: 1rem;
+    margin-right: -4rem;
+    font-size: 30px;
+  }
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:5rem;
+    z-index: 1990;
+    background-color: white;
+    color: black;
+
+}
+header nav 
+{  
+    z-index: 40;
+    float: right;
+    margin-top: -1rem;
+    margin-right: 5rem;
+}
+.NavLink {
+    display: inline-block;  
+    margin-top:2rem;      
+    color:black;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+}
+@media (min-width: 1024px) and (max-width:1162px) { 
+    .NavLink{
+        font-size: 12px;
+        
+    }
+}
+
+header img{
+    height: 4rem; 
+    width: 8rem;
+    margin-top:0.65rem;  
+    margin-left: 4rem;
+    position: relative;
+    top: 0rem;
+    line-height: 100%;  
+}
+header ul li:hover{
+    color: #079800;
+}
+.ExternalLink{
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin-left: 3rem;
+    background-color: #59BA41;
+    height: 2rem;
+    margin-top:1.65rem;  
+    width: 11rem;
+    border-radius: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+   }
+   .ExternalLink p{
+    text-align: center;
+    color: white; 
+    text-decoration: none;
+    margin-left: 1.25rem;
+    font-size: 18px;
+    margin-top:-0.5rem; 
+    font-family: 'Lato', sans-serif;
+    font-weight:600;
+   }
+   @media screen and (max-width:500px) {
+    .ExternalLink p{
+        text-align: center;
+        color: white; 
+        text-decoration: none;
+        margin-left: 0.7rem;
+        font-size: 18px;
+        margin-top:-0.5rem; 
+        font-family: 'Lato', sans-serif;
+        font-weight:600;
+       }
+   }
+
+.breadcrumb{
+    position: absolute !important;
+    width: auto !important;
+    top: 50% !important;
+    right: 15px !important;
+    margin: -10px 100px 0 0 !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    font-size: 12px;
+    list-style: none;
+}
+.breadcrumb a{
+    color: #555;
+    text-decoration: none !important;
+}
+.breadcrumb .ads{
+    color: #777777;
+}
+.sobre{
+    position: relative;
+    left:0;
+    top:0;
+    margin-top:5rem;
+    width:100%;
+    height:3.5rem;
+    background-color:#dbdbdb;
+    font-size: 28px;
+    color:black;    
+    font-family: 'Lato', sans-serif;
+   }
+  
+.navegacao li a{
+    text-decoration: none;
+    color: black;  
+    font-size: 14px;
+}
+#final.row{
+    background-color: white;
+    color: black;
+    border-top-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 500px;
+}
+.roww{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-left: calc(var(--bs-gutter-x) * -.5); 
+}
+#final{
+    margin-top: 4rem;
+    position: relative;
+    background-color:white;
+    width: 100%;
+    height: 19rem;
+    margin-right: 0;
+    border-top: 5px solid rgba(0,0,0,0.2);
+}
+#final li, p{
+    font-size: 15px;
+}
+#final h4{
+    font-size: 18px;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    font-family: 'Raleway', sans-serif;
+
+}
+#final img{
+    vertical-align: middle;
+    max-width: 100%;
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none !important;
+    color: #333;
+}
+#descricao{
+    margin-top: 4rem;
+    height: 1rem;
+    margin-bottom: 4rem;
+  
+}     
+#fotoo{
+    width: 100%;
+}
+.hr1{
+    width: 10%; 
+    height: 0.35rem; 
+    margin-left: 45%; 
+    margin-bottom: 4rem;
+    border: 1px solid black;
+}
+#page-title.sobre h1 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+.entry-image img {
+    display: block;
+    position: relative;
+    height: 17rem;
+}
+.clearfix h2{
+    color: black;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+.foto{
+    margin-top: 5rem;
+    padding: 80px 0px;
+    left: 0; 
+    background-image: url(../public/foto\ carrosel\ site.jpg);
+    background-position: 45% -135.037px;
+    width: 100%;
+    position: relative;
+}
+#page-title h1 {
+    padding: 0.75rem 2px 2rem 2rem ;  
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #444;
+    font-size: 28px;
+    text-transform: uppercase;
+}   
+.spancenter{
+    position: relative !important;
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    color: #555;
+}
+.hr{
+    width: 100;
+    height: 2px;
+    border-width: 0;
+    background-color: green;
+}
+.text2{
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: 'Lato', sans-serif;
+}
+.titulo{
+    text-align: center;
+    position: relative;
+}
+.titulo h1{
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+}
+.titulo{
+    font-size: 25px;
+}
+.titulo span{
+    color: #555;
+}
+.descritivos2{
+    display: inline-block;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+.descritivos{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1rem;    
+    margin-top: 3rem;
+    margin: 3rem auto;
+}
+
+
+.missao{
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    position: relative;
+}
+#abaixo{
+    display: inline-block;
+    margin-left: 1rem;
+}
+.text{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+.h2center{
+    color: #444;
+    text-align: center !important;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+.clientes{
+    width: 145px;   
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+    margin-left: 2rem
+;
+}
+.cont{
+    margin: 3rem 0 5rem 2px;
+}
+.clçaa{
+    margin-left: 2rem;
+}
+.clearflix{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+#content{
+    position: relative;
+}
+.content-padding{
+    position: relative;
+
+}
+.outrosservice{
+    position: relative;
+    margin-top: 50px;
+}
+.semmarginbotton{
+    margin-bottom: 0 !important;
+}
+.clearflix::before{
+    content: " ";
+    display: table;
+}
+a img {
+    border: none;
+}
+.clear{
+    clear: both;
+    display: block;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+  .hamburguer {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hamburguer.open {
+    transform: rotate(90deg);
+  }
+  

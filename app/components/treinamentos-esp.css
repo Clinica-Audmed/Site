@@ -1,0 +1,60 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+div{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+}
+
+#content{
+    position: relative;
+}
+.content-padding{
+    position: relative;
+}
+.outrosservice{
+    position: relative;
+    margin-top: 20px;
+    margin-left: -1rem;
+}
+.semmarginbotton{
+    margin-bottom: 0 !important;
+}
+.clearflix::before{
+    content: "";
+    display: table;
+}
+.single-post .entry-content .entry-image {
+    max-width: 350px;
+}
+img.alignleft, div.alignleft {
+    float: left;
+    margin: 5px 20px 13px 0;
+    max-width: 100%;
+    
+}
+.entry-image img {
+    border-radius: 5px;
+    width: 28rem;
+}
+
+a img {
+    border: none;
+}
+
+img {
+    max-width: 100%;
+}
+.clear{
+    clear: both;
+    display: block;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+

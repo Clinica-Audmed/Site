@@ -1,0 +1,98 @@
+.container{
+    color: black;
+    position: relative;
+    margin-top: 5rem;
+}
+.titulo{
+    text-align: center;
+    position: relative;
+    margin-top: 3rem;
+}
+.titulo h1{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 767px){
+.titulo h1 {
+    font-size: 26px;
+}}
+.titulo span{
+    font-size: 22px;
+}
+@media (max-width: 767px){
+.titulo h1 + span {
+    font-size: 18px;
+}}
+
+.titulo.title::after{
+    margin: 30px auto 0;
+}
+.titulo::after{
+    content: '';
+    display: block;
+    width: 40px;
+    border-top: 2px solid #444;
+}
+#descricao{
+    margin-top: 4rem;
+    height: 1rem;
+  
+}
+#content .container{
+    position: relative;
+}
+a{
+    text-decoration: none ;
+    color: #333;
+}
+.servicos h4>span{
+    float: none;
+    background-color: #559823;
+    margin-right:10px; 
+    color: #ffffff;
+}
+#content .container {
+    position: relative;
+}
+@media (min-width: 480px) and (max-width: 767px){
+.container, #header.full-header .container, .container-fullwidth {
+    width: 470px !important;
+}}
+.bottommargin {
+    margin-bottom: 50px !important;
+}
+.bottommargin-sm {
+    margin-bottom: 30px !important;
+}
+.bottommargin-no {
+    margin-bottom: 0 !important;
+}
+.feature-box.fbox-center {
+    padding: 0;
+    text-align: center;
+}
+.feature-box:first-child {
+    margin-top: 0px;
+}
+.feature-box {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 0 0 80px;
+}
+h4{
+    color: #444;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;}
+@media (max-width: 767px){
+h4 {
+    font-size: 16px;
+}}
+a img{
+    border: none;
+}
+img{
+    max-width: 100%;
+}

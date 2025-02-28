@@ -1,0 +1,116 @@
+.container{
+    color: black;
+    position: relative;
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#descricao{
+    margin-top: 4rem;
+    height: 1rem;
+  
+}
+#content .container{
+    position: relative;
+}
+.titulo{
+    text-align: center;
+    position: relative;
+}
+.titulo h1{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 767px){
+.titulo h1 {
+    font-size: 26px;
+}}
+.titulo span{
+    font-size: 22px;
+}
+@media (max-width: 767px){
+.titulo h1 + span {
+    font-size: 18px;
+}}
+.feature-box.fbox-center:not(.fbox-bg) h3::after {
+    content: '';
+    display: block;
+    margin: 20px auto;
+    width: 50px;
+    border-top: 2px solid #555;
+    -webkit-transition: width .3s ease;
+    -o-transition: width .3s ease;
+    transition: width .3s ease;
+}
+@media (min-width: 480px) and (max-width: 767px){
+.container .container {
+    width: 470px !important;
+}}
+.feature-box.fbox-center:not(.fbox-bg) h3:hover{
+    -webkit-transition: width .3s ease;
+    -o-transition: width .3s ease;
+    transition: width .3s ease;
+}
+
+.titulo.title::after{
+    margin: 30px auto 0;
+}
+.feature-box h3{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #333;
+    
+}
+.feature-box a{
+    text-decoration: none;
+}
+.titulo::after{
+    content: '';
+    display: block;
+    width: 40px;
+    border-top: 2px solid #444;
+}
+.container p{
+    line-height: 1.8;
+
+}
+.feature-box.fbox-center p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+.feature-box p {
+    margin-top: 8px 0 0 0;
+    color: #999;
+}
+
+.img{
+    margin-bottom: 30px !important;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    max-width: 100%;
+    overflow: clip;
+    overflow-clip-margin: content-box;
+}
+.h3desc{
+    font-size: 16px;
+    text-align: center;
+}
+.feature-box.fbox-center {
+    padding: 0;
+    text-align: center;
+}
+.feature-box:first-child {
+    margin-top: 0;
+}
+.feature-box {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 0 0 80px;
+}

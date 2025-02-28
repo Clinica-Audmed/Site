@@ -1,0 +1,53 @@
+{
+  "name": "audmed",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.17",
+    "@types/express": "^4.17.21",
+    "audmed": "file:",
+    "bootstrap": "^5.3.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "framer-motion": "^10.16.16",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.294.0",
+    "metadata": "^0.1.0",
+    "next": "^14.1.1",
+    "nodemailer": "^6.9.7",
+    "npm": "^10.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18",
+    "react-fontawesome": "^1.7.1",
+    "react-icons": "^4.12.0",
+    "react-responsive": "^9.0.2",
+    "sharp": "^0.33.2",
+    "update-dotenv": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20.10.5",
+    "@types/nodemailer": "^6.4.14",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "next": "^14.1.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5"
+  }
+}
