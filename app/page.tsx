@@ -46,7 +46,7 @@ const Home:React.FC = ()=> {
                     <ul className='list-none p-0 m-0'>
                     <li>
                     Segunda à Sexta
-                    <span className='ml-20 text-sm text-white'>07:00 - 17:00</span>
+                    <span className='ml-20 text-sm text-white'>07:00 - 17:00 </span>
                     </li>
                     </ul>
                 </div>
